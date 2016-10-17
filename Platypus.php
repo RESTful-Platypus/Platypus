@@ -194,6 +194,10 @@ class Platypus {
 		unset($result['result']['_links']);
 
 		foreach($result['result'] as &$item) {
+			if(is_object($item)) {
+				$item = get_object_vars($item);
+			}
+
 			if(!isset($item['_links'])) {
 				continue;
 			}
