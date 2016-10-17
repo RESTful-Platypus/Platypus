@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rize/uri-template": "~0.3"
+    }
+}
