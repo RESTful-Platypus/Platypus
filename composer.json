@@ -1,5 +1,15 @@
 {
-    "require": {
-        "rize/uri-template": "~0.3"
+  "name": "Platypus",
+  "type": "library",
+  "description": "A simple Framework for reusing existing Objects as a base for REST-APIs.",
+  "license": "MIT",
+  "keywords": ["REST", "HATEOAS", "Framework"],
+  "require": {
+    "rize/uri-template": "~0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Platypus\\": "./"
     }
+  }
 }
