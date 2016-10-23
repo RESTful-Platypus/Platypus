@@ -1,5 +1,5 @@
 {
-  "name": "Platypus",
+  "name": "restipus-Platypus",
   "type": "library",
   "description": "A simple Framework for reusing existing Objects as a base for REST-APIs.",
   "license": "MIT",
