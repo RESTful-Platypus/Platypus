@@ -11,6 +11,7 @@ class Platypus {
 		spl_autoload_register([$this, '__autoload']);
 
 		$this->uri = strtolower(rtrim($_SERVER['REQUEST_URI'], '/'));
+		$this->uri = empty($this->uri) ? '/' : $this->uri;
 		$this->method = strtolower($_SERVER['REQUEST_METHOD']);
 		$this->contentType = strtolower(isset($_SERVER['CONTENT_TYPE']) ? $_SERVER['CONTENT_TYPE'] : '*/*');
 		$this->accept = array_map('strtolower', (explode(',', $_SERVER['HTTP_ACCEPT'])));
